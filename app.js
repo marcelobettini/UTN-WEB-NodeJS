@@ -4,11 +4,13 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 
+require("dotenv").config()// cargamos los datos de variables de ambiente
+
 const indexRouter = require("./routes/index");
 const contactRouter = require("./routes/contact");
 const aboutRouter = require("./routes/about");
 
-var app = express();
+const app = express();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));

@@ -4,7 +4,7 @@
 <body>
     <section class="formContainer">
 
-        <form class="form" action="" method="">
+        <form class="form" action="/contact" method="POST">
             <label for="nombre"></label>
             <input type="text" name="nombre" autofocus placeholder="Nombre">
             <label for="apellido"></label>
@@ -18,9 +18,9 @@
                 <input type="submit" value="Enviar">
                 <a href="/"><input type="button" value="Home"></a>
             </div>
-
-
+        <p>{{message}}</p> 
         </form>
+
 
     </section>
 </body>
