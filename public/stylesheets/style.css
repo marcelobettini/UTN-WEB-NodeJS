@@ -2,6 +2,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
@@ -57,29 +58,28 @@ nav a {
 
 /* esta es la barra que se abre debajo del nav, en dispositivos
 móviles, y que contiene los elementos de menú */
-.pull-down-menu{
+.pull-down-menu {
   background-color: rgb(204, 178, 178, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  top:90px;
-  position: sticky;  
-  height: 150px;    
+  top: 90px;
+  position: sticky;
+  height: 150px;
 }
 .pull-down-menu ul {
   font-size: 1rem;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   list-style-type: none;
   text-align: center;
-  
 }
-.pull-down-menu li {  
+.pull-down-menu li {
   background-color: rgb(255, 248, 220, 0.9);
-  margin: .5rem 0;  
+  margin: 0.5rem 0;
   padding: 0.2rem 0;
 }
-.pull-down-menu a{
-  text-decoration: none;  
+.pull-down-menu a {
+  text-decoration: none;
   color: black;
   background-color: rgb(255, 248, 220, 0.9);
   padding: 0 0.2rem;
@@ -88,7 +88,7 @@ móviles, y que contiene los elementos de menú */
 /* una clase para quitar y poner de la barra inferior cada vez que se presiona
 el botón hamburger */
 .invisible {
-  visibility:hidden;
+  visibility: hidden;
 }
 /* estilo del botón para el menú en dispositivos móviles (hamburger button) */
 .fa-bars {
@@ -113,23 +113,25 @@ el botón hamburger */
   font-size: 3rem;
   font-weight: 100;
 }
-.main-img-txt-group h2, h4, p {
+.main-img-txt-group h2,
+h4,
+p {
   margin-bottom: 1rem;
 }
-.txt-first-up:first-letter{
-  font-family: 'Aguafina Script', cursive;
+.txt-first-up:first-letter {
+  font-family: "Aguafina Script", cursive;
   float: left;
-  color:white;
+  color: white;
   background-color: black;
   padding: 1rem 1rem 0 1rem;
   font-size: 3.5rem;
   font-weight: bold;
-  line-height: .8;
-  margin: 0.2rem 0.4rem 0.1rem 0rem;    
+  line-height: 0.8;
+  margin: 0.2rem 0.4rem 0.1rem 0rem;
 }
 
 /* estilos de la sección <main> */
-main  {
+main {
   margin-top: 8rem;
   display: flex;
   flex-direction: column;
@@ -145,7 +147,7 @@ main h2 {
   margin: 2rem 0;
   width: 79vw;
 }
-hr {  
+hr {
   margin: 1rem 0 2rem 0;
 }
 
@@ -157,18 +159,18 @@ aside {
 /* artículo secundario */
 .article-bottom {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   align-items: center;
   margin-bottom: 10rem;
 }
-.header-bottom {  
+.header-bottom {
   text-align: center;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   padding: 1rem;
   margin: 10rem 0 2rem 0;
   color: white;
 }
-.header-bottom h2:nth-child(even){
+.header-bottom h2:nth-child(even) {
   font-size: 3rem;
 }
 .bg-black {
@@ -177,16 +179,48 @@ aside {
 .bg-blue {
   background-color: rgb(26, 102, 163);
 }
+.our-products-ttl {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 4rem;
+}
+.products-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
+.products-container article {
+  display: flex;
+  padding: 0.8rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  border: 1px solid black;
+  border-radius: 5%;
+  margin: 1rem 0;
+}
+.products-container h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.country {
+  font-size: 1.5rem;
+}
+.products-container img {
+  border-radius: 5%;
+  margin: 0.5rem 0;
+}
 /* flecha para ir a top */
 .arrow-up {
   display: flex;
   height: 5rem;
-  border-top: 1px solid darkgray;
+  /* border-top: 1px solid darkgray; */
   border-bottom: 1px solid darkgray;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10rem;
+  margin: 5rem 0;
 }
 .arrow-up a {
   color: black;
@@ -199,9 +233,7 @@ footer {
   align-items: center;
   text-align: center;
   align-self: center;
-  margin: 15rem 0 0 0;
-  border-top: 1px solid darkgray;
-  border-bottom: 1px solid;
+  margin: 5rem 0 0 0;
   padding: 2rem 0;
 }
 
@@ -253,71 +285,66 @@ footer a {
   nav a {
     background-color: transparent;
   }
-  .main-art-x2{
+  .main-art-x2 {
     padding: 2rem 1rem;
-    border:1px solid  darkgray;
-    border-radius: .5rem;
+    border: 1px solid darkgray;
+    border-radius: 0.5rem;
   }
-  .main-img-txt-group {    
+  .main-img-txt-group {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
   }
-  .img-txt{
+  .img-txt {
     display: block;
   }
   .img-txt img {
-   width:45%;
-   float:right;
-   margin-left: 1.5rem;   
+    width: 45%;
+    float: right;
+    margin-left: 1.5rem;
   }
-  .img-main{
+  .img-main {
     width: 50%;
   }
   main article {
     flex-flow: row wrap;
   }
 
-  .header-bottom {  
+  .header-bottom {
     text-align: left;
-    text-transform: uppercase;  
+    text-transform: uppercase;
     padding: 1rem;
     margin: 10rem 0 2rem 0;
     color: white;
   }
-  .header-bottom h2:nth-child(even){
-    font-size: 3.5rem;    
+  .header-bottom h2:nth-child(even) {
+    font-size: 3.5rem;
   }
-  
-  }
+}
 
 @media (min-width: 1024px) {
-
-  main {    
+  main {
     flex-direction: row;
     align-items: flex-start;
     gap: 2rem;
-    
   }
   aside {
     display: flex;
-    padding: 1rem;    
-    width: 30vw;    
-    background-color:rgb(174, 187, 174)  ;
-    border-radius: .5rem;
-  }
-    
-  .main-art-x2 {    
-    padding:1rem;
-    width: 55vw;    
-    display:flex;
-    flex-direction: column;    
+    padding: 1rem;
+    width: 30vw;
+    background-color: rgb(174, 187, 174);
+    border-radius: 0.5rem;
   }
 
+  .main-art-x2 {
+    padding: 1rem;
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+  }
 }
- @media (min-width: 1025px){
-   body {
-     max-width: 1200px;
-     margin: auto;
-   }
- }
-
+@media (min-width: 1025px) {
+  body {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
