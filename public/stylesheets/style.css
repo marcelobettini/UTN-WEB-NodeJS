@@ -216,7 +216,6 @@ aside {
 .arrow-up {
   display: flex;
   height: 5rem;
-  /* border-top: 1px solid darkgray; */
   border-bottom: 1px solid darkgray;
   justify-content: center;
   align-items: center;
