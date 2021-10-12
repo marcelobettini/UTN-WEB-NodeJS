@@ -50,6 +50,7 @@ nav ul {
   display: none;
 }
 nav a {
+  display: block;
   text-decoration: none;
   color: black;
   background-color: rgb(255, 248, 220, 0.9);
