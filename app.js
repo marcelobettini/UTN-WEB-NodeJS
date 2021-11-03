@@ -29,7 +29,8 @@ app.use("/about", aboutRouter);
 app.use("/login", loginRouter);
 
 // catch 404 and forward to error handler
-app.use(function (req, res, next) {
+app.use("*",function (req, res, next) {
+  res.send("404 Not Found");
   next(createError(404));
 });
 

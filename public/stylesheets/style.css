@@ -97,6 +97,11 @@ el botón hamburger */
   font-size: 1.5rem;
 }
 
+.fa-bars:hover {
+  
+  cursor: pointer;
+}
+
 /* estilos de la marca de la casa */
 .main-header {
   max-width: 300px;
