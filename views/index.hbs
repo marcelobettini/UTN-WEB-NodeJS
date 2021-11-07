@@ -174,7 +174,14 @@
   <h2 id="products-nav" class="our-products-ttl">Nuestros Productos</h2>
   <!-- aquí cargamos de forma dinámica información de la base de datos -->
   <section id="products-container" class="products-container"></section>
+  
 
+  {{#each products}}
+<p>{{id}}</p>
+<p>{{name}}</p>
+<p>{{origin}}</p>
+<img src={{image}} alt={{name}}>
+{{/each}}
   <!-- la flechita es un icono de Material Icons -->
   <div class="arrow-up">
     <a href="#bg-img"><span class="material-icons arrow">

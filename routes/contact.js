@@ -7,7 +7,6 @@ router.get("/", function (req, res, next) {
   res.render("contact");
 });
 
-
 router.post("/", async (req, res, next) => {
   const NOMBRE = req.body.nombre;
   const APELLIDO = req.body.apellido;
@@ -16,7 +15,7 @@ router.post("/", async (req, res, next) => {
 
   let emailMsg = {
     to: "marcelobettini@yahoo.com.ar",
-    subject: "Mensaje desde Coffee Shop",
+    subject: "Mensaje desde Coffee House",
     html: `${NOMBRE} ${APELLIDO} se comunicó a través de nuestro formulario de contacto. Su email es ${EMAIL}. Este es su mensaje: "${MENSAJE}$`,
   };
 
@@ -30,11 +29,9 @@ router.post("/", async (req, res, next) => {
   });
 
   let info = await transport.sendMail(emailMsg);
-  console.log(info)
+  console.log(info);
   res.render("contact", {
-     message: "Mensaje enviado" 
-  })
-
-
+    message: "Mensaje enviado",
+  });
 });
 module.exports = router;
