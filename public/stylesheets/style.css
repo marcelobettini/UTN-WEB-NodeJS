@@ -86,7 +86,7 @@ móviles, y que contiene los elementos de menú */
   padding: 0 0.2rem;
 }
 
-/* una clase para quitar y poner de la barra inferior cada vez que se presiona
+/* una clase para quitar y poner la barra inferior cada vez que se presiona
 el botón hamburger */
 .invisible {
   visibility: hidden;
@@ -98,7 +98,6 @@ el botón hamburger */
 }
 
 .fa-bars:hover {
-  
   cursor: pointer;
 }
 
@@ -265,6 +264,9 @@ footer a {
 
 /* diseño adaptable (responsive design) */
 @media (min-width: 720px) {
+  .pull-down-menu {
+    visibility: hidden;
+  }
   nav {
     height: 120px;
   }
@@ -325,7 +327,6 @@ footer a {
     font-size: 3.5rem;
   }
 }
-
 @media (min-width: 1024px) {
   main {
     flex-direction: row;
