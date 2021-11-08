@@ -98,7 +98,6 @@ el botón hamburger */
 }
 
 .fa-bars:hover {
-  
   cursor: pointer;
 }
 
@@ -265,6 +264,9 @@ footer a {
 
 /* diseño adaptable (responsive design) */
 @media (min-width: 720px) {
+  .pull-down-menu {
+    visibility: hidden;
+  }
   nav {
     height: 120px;
   }
