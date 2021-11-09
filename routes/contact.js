@@ -28,10 +28,19 @@ router.post("/", async (req, res, next) => {
     },
   });
 
-  let info = await transport.sendMail(emailMsg);
-  console.log(info);
-  res.render("contact", {
-    message: "Mensaje enviado",
+  transport.sendMail(emailMsg, (err, info) =>{
+    let message = null;
+    if(err){
+      messagge="😯 No se pudo enviar. Intente otra vez";
+    }else {
+      console.log(info.response)
+      message="Mensaje enviado ❤"
+    }
+    res.render("contact", {
+      message,
+    });
   });
+  
+  
 });
 module.exports = router;
