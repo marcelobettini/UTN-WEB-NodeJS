@@ -1,7 +1,7 @@
 const pool = require("../db");
-async function getProducts() {
+function getProducts() {
   const query = "SELECT * FROM products";
-  const rows = await pool.query(query);
+  const rows = pool.query(query);
   return rows;
 }
 module.exports = { getProducts };
