@@ -14,9 +14,10 @@ router.post("/", async (req, res, next) => {
   const MENSAJE = req.body.mensaje;
 
   let emailMsg = {
+    from: EMAIL,
     to: "marcelobettini@yahoo.com.ar",
     subject: "Mensaje desde Coffee House",
-    html: `${NOMBRE} ${APELLIDO} se comunicó a través de nuestro formulario de contacto. Su email es ${EMAIL}. Este es su mensaje: "${MENSAJE}$`,
+    html: `${NOMBRE} ${APELLIDO} dice: "${MENSAJE}`,
   };
 
   let transport = nodemailer.createTransport({
