@@ -187,7 +187,8 @@ aside {
 .our-products-ttl {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 4rem;
+  margin-top: 6em;
+  margin-bottom: 1em;
 }
 .products-container {
   display: flex;
