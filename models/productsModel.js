@@ -4,4 +4,5 @@ function getProducts() {
   const rows = pool.query(query);
   return rows;
 }
+
 module.exports = { getProducts };
