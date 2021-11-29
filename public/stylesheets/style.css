@@ -20,7 +20,7 @@ body {
 
 /* imagen de portada */
 .bg-img {
-  background-image: url("../images/coffee-shop-decor.jpg");
+  background-image: url("/images/coffee-shop-decor.jpg");
   height: 1200px;
   background-repeat: no-repeat;
 }
@@ -86,7 +86,7 @@ móviles, y que contiene los elementos de menú */
   padding: 0 0.2rem;
 }
 
-/* una clase para quitar y poner la barra inferior cada vez que se presiona
+/* una clase para quitar y poner de la barra inferior cada vez que se presiona
 el botón hamburger */
 .invisible {
   visibility: hidden;
@@ -95,10 +95,6 @@ el botón hamburger */
 .fa-bars {
   margin-right: 1rem;
   font-size: 1.5rem;
-}
-
-.fa-bars:hover {
-  cursor: pointer;
 }
 
 /* estilos de la marca de la casa */
@@ -178,12 +174,7 @@ aside {
 .header-bottom h2:nth-child(even) {
   font-size: 3rem;
 }
-.bg-black {
-  background-color: black;
-}
-.bg-blue {
-  background-color: rgb(26, 102, 163);
-}
+
 .our-products-ttl {
   text-align: center;
   font-size: 2rem;
@@ -197,27 +188,30 @@ aside {
 }
 
 .products-container article {
+  font-size: 0.8rem;
   display: flex;
   padding: 0.8rem;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
-  border: 1px solid black;
-  border-radius: 5%;
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 1%;
   margin: 1rem 0;
 }
-.products-container h3 {
-  font-size: 2rem;
+.products-container h3,
+.country {
+  font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
-.country {
-  font-size: 1.5rem;
-}
+
 .products-container img {
-  border-radius: 5%;
+  width: 200px;
+  border-radius: 2%;
   margin: 0.5rem 0;
+  box-shadow: -3px 3px 5px black;
 }
+
 /* flecha para ir a top */
 .arrow-up {
   display: flex;
@@ -249,9 +243,8 @@ footer {
   height: 200px;
 }
 .footer-icons {
-  background-color: rgb(233, 227, 153);
   font-size: 1.4rem;
-  padding: 1rem 0;
+  margin-bottom: 1em;
 }
 .footer-contact,
 .footer-map,
@@ -266,7 +259,7 @@ footer a {
 /* diseño adaptable (responsive design) */
 @media (min-width: 720px) {
   .pull-down-menu {
-    visibility: hidden;
+    display: none;
   }
   nav {
     height: 120px;
@@ -328,6 +321,7 @@ footer a {
     font-size: 3.5rem;
   }
 }
+
 @media (min-width: 1024px) {
   main {
     flex-direction: row;

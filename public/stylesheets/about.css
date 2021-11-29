@@ -1,32 +1,27 @@
 * {
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
-
-.container {    
-  
-  display: flex;  
-  height: 100vh;
-  flex-direction: column;  
-  background-color: snow;
-  
+.container {
+  display: flex;
+  flex-direction: column;
 }
 .black {
-  background-image: url("../images/roasting_coffee.jpg");
+  background-image: url("/images/roasting_coffee.jpg");
   background-size: cover;
-  height: 45%;  
   background-position: center;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;  
+  justify-content: flex-end;
+  height: 40vh;
   background-color: black;
 }
 .white {
-  height: 55%;  
-  display: flex;  
+  display: flex;
   flex-direction: column;
-  align-items: center;  
+  align-items: center;
+  justify-content: space-between;
   background-color: snow;
 }
 
@@ -38,9 +33,6 @@ h2 {
 }
 .white h2,p{
     margin: 0 2rem 1rem 2rem;
-}
-.white p {
-  font-size: .8rem;
 }
 
 .btn input {
@@ -59,20 +51,31 @@ h2 {
   color: black;
   cursor: pointer;
 }
-
-@media only screen and (min-width: 1024px) {
-  .container {
-    flex-direction: row;    
-  }
-  .black, .white {
-    width: 50%;
-    height: 100%;
-  }
-  .white {
-    
-    justify-content: space-around;
-  }
-
+@media (min-width: 720px) {
+    .white h2,p{
+        margin: 1rem 3rem;
+    }   
 }
-
-
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        width: 100vw;
+    }
+    .black{        
+        align-items: center;
+        justify-content: flex-end;
+        width: 50vw;
+        height: 100vh;
+    }
+    h2 {
+        font-size: 7rem;
+    
+    }
+    .white{
+        justify-content: space-around;
+        width: 50vw;
+    }
+    .white h2,p{
+        margin: 0rem 6rem 2rem 6rem;
+    }
+}
